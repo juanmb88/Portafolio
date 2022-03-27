@@ -440,7 +440,7 @@ form .form-group2 textarea::-webkit-scrollbar-track {
 }
 
 /*************************/
-/********PORTFOLIO********/
+/********PORTAFOLIO********/
 /*************************/
 
 .container-portfolio {
@@ -845,7 +845,7 @@ footer p {
 
   /** INICIO **/
   .container-inicio {
-    background-image: url("../images/background-agustin-mobile.jpg");
+    background-image: url("../images/juan-frente.jpg");
   }
 
   .content-inicio .presentacion h1 {
