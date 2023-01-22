@@ -47,7 +47,7 @@ for (let i = 0; i < proyItem.length; i++) {
     proyItem[i].classList.add("descrip");
     setTimeout(() => {
       proyItem[i].classList.remove("descrip");
-    }, 5000);
+    }, 3000);
   });
 }
 

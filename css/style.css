@@ -433,10 +433,10 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   margin: 10px 0 0 0;
 }
 .conocimiento-item .detalles span {
-  color: #ff9100;
+  color: #000000;
   font-size: 1em;
   font-weight: 600;
-  animation: opacidad 3s ease infinite;
+  animation: opacidad 2s ease infinite;
 }
 
 /*************************/
