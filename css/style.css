@@ -115,13 +115,14 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #393b44; /* Set a background color */
+  background-color: #17229e; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   font-size: 18px; /* Increase font size */
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease;
+  border-radius: 5px;
 }
 
 #goTop:hover {
@@ -267,14 +268,16 @@ form .form-group2 textarea::-webkit-scrollbar-track {
 }
 
 .content-inicio .presentacion a {
-  color: #f2f3f8;
+  color: #d4dbfa;
   font-size: 1.1em;
   font-weight: 500;
   line-height: 17px;
   padding: 10px 15px;
-  background: #393b44;
+  background: transparent;
   margin-right: 30px;
   transition: all 0.2s ease;
+  border-radius: 12px;
+  border: solid 1px #ced0d9;
 }
 
 .content-inicio .presentacion a:last-child {
@@ -284,7 +287,9 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   line-height: 17px;
   padding: 10px 15px;
   background: transparent;
-  border: solid 1px #393b44;
+  border: solid 1px #ced0d9;
+  border-radius: 12px;
+
 }
 
 .content-inicio .presentacion a:hover {
@@ -295,7 +300,6 @@ form .form-group2 textarea::-webkit-scrollbar-track {
 .content-inicio .presentacion a:last-child:hover {
   color: #e0e6ff;
   border: solid 1px #8d93ab;
-  background: none;
   box-shadow: none;
 }
 
@@ -340,6 +344,7 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   float: left;
   max-width: 370px;
   min-width: 240px;
+  border-radius: 10px;
 }
 
 .content-sobre-mi .sobre-mi {
@@ -386,7 +391,7 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   justify-content: center;
   flex-direction: column;
   padding: 10px 0 100px 0;
-  min-height: 400px;
+  height: 450px;
   background: transparent;
 }
 
@@ -423,7 +428,7 @@ form .form-group2 textarea::-webkit-scrollbar-track {
 .conocimiento-item i {
   margin: 30px 0 0 0;
   font-size: 4.5em;
-  color: #e4e6f0;
+  color: #000000;
 }
 
 .conocimiento-item .detalles p {
