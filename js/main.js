@@ -1,3 +1,12 @@
+let tituloPrevio = document.title;
+window.addEventListener('blur', ()=>{
+  tituloPrevio = document.title
+  document.title = '¡Hey! ¡No te Vayas! ¡Vuelve!'
+})
+
+window.addEventListener('focus', ()=>{
+  document.title = tituloPrevio
+})
 
 // ******* MOSTRAR NAV BG & GO TOP **************
 
