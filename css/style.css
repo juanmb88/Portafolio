@@ -512,7 +512,7 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   cursor: pointer;
   margin: 10px;
   border: 4px solid #484747;
-  box-shadow: 10px 13px rgb(55, 65, 65);
+  box-shadow: 5px 13px rgb(55, 65, 65);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -520,10 +520,10 @@ form .form-group2 textarea::-webkit-scrollbar-track {
 }
 
 .proyectos .proyecto-item img {
-  position: auto;
+  
   transition: all 1.2s ease-in-out;
   min-width: 520px;
-  
+ 
 }
 
 .proyecto-item .proyecto-hover {
@@ -686,18 +686,21 @@ form .form-group2 textarea::-webkit-scrollbar-track {
 
 .content-contacto .correo span i {
   font-size: 1.5em;
-  color: #d6d6d6;
+  color: #393b44;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .content-contacto .correo span i:hover {
-  color: #393b44;
+  color: #121213;
+
 }
 .content-contacto .correo label {
-  color: rgb(38, 186, 38);
+  color: rgb(43, 100, 43);
   position: absolute;
-  top: -20px;
-  animation: opacidad 1.5s ease infinite;
+  font-size: x-large;
+  top: -30px;
+  left: 40px;
+  animation: opacidad 1.0s ease infinite;
 }
 
 /*************************/
