@@ -39,7 +39,9 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   background: #e1e1e15a;
 }
 
-/** PRELOADER **/
+/*************************/
+/********PRELOADER********/
+/*************************/
 .preloader-bg {
   position: fixed;
   z-index: 10000;
@@ -51,20 +53,97 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   align-items: center;
   justify-content: center;
 }
-.preloader-line {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #2c2e35;
-  width: 260px;
+
+.wrapper {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  z-index: 1;
 }
-.preloader {
-  border: 2.5px solid #fafafa;
-  background: #fafafa;
-  width: 60px;
-  animation: deslice 2s ease infinite;
+
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 .5s alternate infinite ease;
 }
-@keyframes deslice {
+
+@keyframes circle7124 {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.circle:nth-child(2) {
+  left: 45%;
+  animation-delay: .2s;
+}
+
+.circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
+}
+
+.shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.9);
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow046 .5s alternate infinite ease;
+}
+
+@keyframes shadow046 {
+  0% {
+    transform: scaleX(1.5);
+  }
+
+  40% {
+    transform: scaleX(1);
+    opacity: .7;
+  }
+
+  100% {
+    transform: scaleX(.2);
+    opacity: .4;
+  }
+}
+
+.shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: .2s
+}
+
+.shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
+}
+/*************/
+ @keyframes deslice {
   0% {
     transform: translateX(-100px);
   }
@@ -75,12 +154,7 @@ form .form-group2 textarea::-webkit-scrollbar-track {
     transform: translateX(-100px);
   }
 }
-.preloader-bg span {
-  margin-bottom: 15px;
-  color: #fafafa;
-  font-weight: 600;
-  animation: opacidad 1.5s ease infinite;
-}
+
 @keyframes opacidad {
   0% {
     opacity: 0;
@@ -97,14 +171,14 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   pointer-events: none;
   animation: opacidad2 0.5s ease forwards;
 }
-@keyframes opacidad2 {
+ @keyframes opacidad2 {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
   }
-}
+}  
 
 /** GO TO TOP BUTTON **/
 #goTop {
@@ -1019,18 +1093,25 @@ footer p {
 
 @media only screen and (max-width: 460px) {
   /** PRELOADER **/
-  .preloader-line {
-    width: 200px;
+  .wrapper {
+    width: 150px;
   }
-  .preloader {
-    border: 2px solid #fafafa;
-  }
+ 
 
   .container-inicio {
     width: 100%;
     height: 100vh;
     background-image: url("../images/foto1.png");
 
+  }
+  .content-contacto .correo label {
+    color: rgb(43, 100, 43);
+    position: absolute;
+    font-size: large;
+    top: -30px;
+    left: 60px;
+   
+    
   }
   
   @keyframes deslice {
@@ -1093,6 +1174,7 @@ footer p {
   .container-conocimientos h3 {
     font-size: 2em;
   }
+
 }
 
 @media only screen and (max-height: 450px) {
