@@ -180,7 +180,9 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   }
 }  
 
-/** GO TO TOP BUTTON **/
+/*************************/
+/********GO TO TOP *******/
+/*************************/
 #goTop {
   display: none;
   position: fixed; /* Fixed/sticky position */
@@ -189,7 +191,7 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #17229e; /* Set a background color */
+  background-color: #af5454; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -420,6 +422,8 @@ form .form-group2 textarea::-webkit-scrollbar-track {
   min-width: 240px;
   border-radius: 10px;
 }
+/********efecto Imagen*********/
+/********efecto Imagen*********/
 
 .content-sobre-mi .sobre-mi {
   margin: 0 0 0 50px;
